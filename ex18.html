@@ -6,38 +6,67 @@
     <title>Exercício 18</title>
     <style>
         .radio-container {
-            border: 1px solid black;
+            margin: 10px;
+        }
+        #radio-container1  {
+            color: blue;
+            border: 1px solid;
+            width: 100px;
+        }
+        #radio-container2  {
+            color: green;
+            border: 1px solid;
+            width: 100px;
+        }
+        #radio-container3  {
+            color: red;
+            border: 1px solid;
+            width: 100px;
+        }
+        #checkbox-container1 {
+            color: orange;
+            border: 1px solid;
+            width: 100px;
+        }
+        #checkbox-container2 {
+            color: purple;
+            border: 1px solid;
+            width: 100px;
+        }
+        #checkbox-container3 {
+            color: brown;
+            border: 1px solid;
             width: 100px;
         }
     </style>
 </head>
 <body>
     <h2>Botões de Rádio</h2>
-    <div class="radio-container">
-        <input type="radio" id="radio1" name="radio-group">
-        <label class="radio-label" for="radio1">Opção 1</label>
+    <div id="radio-container1" class="radio-container">
+        <input type="radio" id="option1" value="option1" name="radio">
+        <label for="option1">Opção 1</label>
     </div>
-    <div class="radio-container">
-        <input type="radio" id="radio2" name="radio-group">
-        <label class="radio-label" for="radio2">Opção 2</label>
+    <div id="radio-container2" class="radio-container">
+        <input type="radio" id="option2" value="option2" name="radio">
+        <label for="option2">Opção 2</label>
     </div>
-    <div class="radio-container">
-        <input type="radio" id="radio3" name="radio-group">
-        <label class="radio-label" for="radio3">Opção 3</label>
+    <div id="radio-container3" class="radio-container">
+        <input type="radio" id="option3" value="option3" name="radio">
+        <label for="option3">Opção 3</label>
     </div>
 
     <h2>Checkboxes</h2>
-    <div class="checkbox-container">
+    <div id="checkbox-container1" class="checkbox-container">
         <input type="checkbox" id="checkbox1">
-        <label class="checkbox-label" for="checkbox1">Opção A</label>
+        <label for="checkbox1">Opção A</label>
     </div>
-    <div class="checkbox-container">
+    <div id="checkbox-container2" class="checkbox-container">
         <input type="checkbox" id="checkbox2">
-        <label class="checkbox-label" for="checkbox2">Opção B</label>
+        <label for="checkbox2">Opção B</label>
     </div>
-    <div class="checkbox-container">
+    <div id="checkbox-container3" class="checkbox-container">
         <input type="checkbox" id="checkbox3">
-        <label class="checkbox-label" for="checkbox3">Opção C</label>
+        <label for="checkbox3">Opção C</label>
     </div>
 </body>
 </html>

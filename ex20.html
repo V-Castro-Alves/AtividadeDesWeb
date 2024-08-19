@@ -3,53 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout de Colunas com Float</title>
+    <title>Exercício 20</title>
     <style>
-        .container {
-            width: 100%;
-            overflow: hidden; /* Garante que o contêiner envolva as colunas */
-            background-color: #f4f4f4; /* Cor de fundo do contêiner */
-            padding: 20px;
-        }
-
         .coluna-esquerda {
             float: left;
             width: 30%;
             background-color: #3498db;
-            color: white;
             padding: 20px;
             box-sizing: border-box;
         }
-
         .coluna-direita {
             float: left;
             width: 70%;
             background-color: #2ecc71;
-            color: white;
             padding: 20px;
             box-sizing: border-box;
-        }
-
-        /* Limpa o float após as colunas */
-        .clearfix::after {
-            content: "";
-            display: block;
-            clear: both;
         }
     </style>
 </head>
 <body>
-
-    <div class="container clearfix">
+    <div>
         <div class="coluna-esquerda">
-            <h2>Coluna Esquerda</h2>
-            <p>Esta é a coluna esquerda, ocupando 30% da largura do contêiner.</p>
         </div>
         <div class="coluna-direita">
-            <h2>Coluna Direita</h2>
-            <p>Esta é a coluna direita, ocupando 70% da largura do contêiner. Aqui você pode adicionar mais conteúdo, já que esta coluna é mais larga.</p>
         </div>
     </div>
-
 </body>
 </html>
