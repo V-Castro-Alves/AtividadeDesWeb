@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Extra 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .formulario-contato {
+            background-color: wheat;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px black;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .formulario-contato h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .formulario-contato .campo {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .formulario-contato input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .formulario-contato button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .formulario-contato button:hover {
+            background-color: #2980b9;
+        }
+
+        input:focus::placeholder {
+            color: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="formulario-contato">
+        <h2>Contato</h2>
+        <div class="campo">
+            <input type="text" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="campo">
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="campo">
+            <input type="telefone" id="telefone" placeholder="Telefone" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </div>
+
+</body>
+</html>
